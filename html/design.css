@@ -1,0 +1,202 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+#header {
+    background-color: #14ee80;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+    border: 1px solid #b0c4de;
+    border-bottom: none;
+}
+a{
+    text-decoration: none;
+    }
+#body{
+    font-family: 'Lucida Sans';
+    background-image: url('img_download-2.jpg');
+}
+#highlight{
+    color: yellow;
+    font-family: fantasy;
+    font-size: 48px;
+
+}
+/*Dropdown Button */
+#dropbtn{
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+#dropbtn:hover, #dropbtn:focus{
+    background-color: #2980b9;
+}
+
+/* The contaniner <div> - needed to position the dropdown content */
+#dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (Hidden by Default) */
+#dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Change color of dropdown links on hover */
+#dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+/* show the dropdown menu (use JS to add this to the #dropdown-content container when teh user clicks on the dropdown) */
+.show{display: block;}
+#halfpage{
+    background-color: black;
+}
+#sidenav{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+    
+}
+#btn{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+}
+#sidenav a:hover{
+    color: #F1F1F1;
+}
+#sidenav closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.main{
+    margin-left: 160px; /*same as the width of the sidenav*/
+    font-size: 28px; /*increased text to enable scrolling*/
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450px)
+{
+    #sidenav{padding-top: 15px;}
+    #sidenav a {font-size: 18px;}
+}
+
+
+#nav {
+    line-height: 30px;
+    background-color: black;
+    color: black;
+    height: 350px;
+    width: 110px;
+    float: left;
+    padding: 5px;
+}
+#section {
+    width: 350px;
+    float: left;
+    padding: 10px;
+    color: black;
+}
+#p{
+    font-size: 24px;
+    text-align: right;
+    background-color: black;
+    color: black;
+    padding: 0.005px;
+}
+#content{
+    overflow: hidden;
+    width: 100px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+#active{
+    color: black;
+}
+#social{
+    margin: 20px;
+    text-align: center;
+    color: white;
+    text-size-adjust: 10px;
+}
+
+/*facebook button class*/
+.facebookBtn {
+    background: white;
+} .facebookBtn {
+    /* use: before to add the relative icon*/
+    font-family:"font Awesome";
+    content:"\foga"; /*add facebook icon*/
+} 
+:facebookBtn hover
+ 
+{
+    color:aliceblue
+    backgound
+    border-color; 
+    /*change the border color on mouse hover*/            
+}
+/*whatsapp button clas*/
+.whatsappbtn{
+    background: white;
+} .whatsapp{
+    /* use: before to add the relative icon*/
+    font-family:"font Awesome";
+    content: "\foga"; /*add whatsapp icon*/
+} :whatsappbtn:hover
+{
+    color:#4060a5;
+     /*change the border color on mouse hover*/
+}
+#h3{
+    font-size: 12px;
+}
+#a{
+    text-decoration: cornflowerblue;
+    display: inline-block;
+    padding: 8px 16px;
+}
+#img{
+    text-align: center;
+    height: 150px;
+}
+#comment{
+    background-color: dodgerblue;
+    font-size: xx-large;
+    border-radius: 10px 10px 10px 10px;
+    border-bottom: none;
+    border: 1px solid #b0c4de;
+    margin: 50px auto 0px;
+}
+
+#footer {
+    color: dodgerblue;
+    clear: both;
+    text-align: center;
+    padding: 10px;
+}
