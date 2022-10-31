@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Philip's course </title>
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/chat.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Custom stylesheet -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <style>
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(image/loader.gif) center no-repeat #fff;
+}
+  </style>
+  <script>
+    
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").delay(2000).fadeOut();
+	});
+  </script>
+</head>
+
+<body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';" onload="setTimeout(openForm, 10000)">
+  <div class="se-pre-con"></div>
+  <div class="site-wrapper overflow-hidden position-relative">
+    <!-- Site Header -->
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader.gif" alt="preloader">
+   </div>
+   </div>    -->
+    <!--Site Header Area -->
+    <header class="site-header site-header--menu-right landing-14-menu site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="#">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/index.png" alt="" class="light-version-logo" height="30px">
+              <!-- Dark version logo (logo must be White)-->
+              <!--<img src="image/logo/index.png" alt="" class="dark-version-logo">-->
+            </a>
+          </div>
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Courses <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-9">
+                    <li class="sub-menu--item">
+                      <a href="html">HTML & CSS</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="php">PHP</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="python">PYTHON</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="web">Web vulnerabilites</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="hacking">Windows and andriod hacking</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link-item">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a target="_blank" href="https://opay.ng/s/9oxv" class="nav-link-item">Support</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-btn header-btn-l-14 ms-auto d-none d-xs-inline-flex">
+            <a target="_blank" class="btn btn trail-btn focus-reset" href="https://finestdevs.com/shade/">
+              Start free Courses
+            </a>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- Hero Area -->
+    <div class="hero-area-l-14 position-relative z-index-1 overflow-hidden">
+      <div class="container">
+        <div class="row position-relative justify-content-center">
+          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 pr-0 " data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content">
+              <h1>Get Free Courses</h1>
+              <p>on web development, python, mobile hacking
+              </p>
+              <a href="#buy" class="btn focus-reset">Buy full course version</a>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-5 col-md-8 " data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="banner-image-l-14">
+              <img src="./image/l4/hero-img.png" alt="" class="w-100 mt-xl-n10">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-shape-14"></div>
+    </div>
+    <!-- Brand-area -->
+    <div class="brand-area-l-14">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <button class="open-button" onclick="openForm()">Chat philip</button>
+            <div class="chat-popup" id="myForm" style="position: fixed;">
+              <form action="include/cha.php" class="form-container" method="post">
+                <h4><span style="padding: 0% 0% 0% 95%; color: red;" onclick="closeForm()">X</span></h4>
+            
+                <label for="msg"><b>Message</b></label>
+                <iframe src="log.html" frameborder="0"></iframe>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="submit" class="btn" style="background-color: red;" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+            <script>
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                    
+                  }
+                  
+                  function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                  }
+            </script>
+            <h4>Supporters of this course</h4>
+          </div>
+        </div>
+        <div class="row img-grayscale">
+          <div class="col-lg-12">
+            <div class="brand-area-l-14-items d-flex justify-content-center justify-content-xl-between align-items-center flex-wrap ">
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+                <img src="image/l4/brand-logo.svg" alt="">
+              </div>
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
+                <img src="image/l4/brand-logo-1.svg" alt="">
+              </div>
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
+                <img src="image/l4/brand-logo-2.svg" alt="">
+              </div>
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                <img src="image/l4/brand-logo-3.svg" alt="">
+              </div>
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                <img src="image/l4/brand-logo-4.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="brand-aarea-border-l14"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content-Area-1 -->
+    <div class="content-area-l-14-1 position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 order-lg-1 order-1" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+            <div class="h-100 section-heading-8 content text-lg-start text-center">
+              <h2>Start designing website faster and easily</h2>
+              <p>Be able to create website and write programs within 100 days.</p>
+              <a href="#buy" class="btn focus-reset">
+                Get Started Now
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="offset-xl-2 col-xl-6 col-lg-6 col-md-8 pl-xl-11 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+            <div class="content-img">
+              <img src="image/l4/content-img-1.png" alt="" class="w-100 w-xl-auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content-Area-2 -->
+    <div class="content-area-l-14-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-8" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-img pr-lg-13">
+              <img src="image/l4/content-img-2.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-4 offset-xl-2 col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content section-heading-8 text-lg-start text-center">
+              <h2>
+                Simple and understandable course.
+              </h2>
+              <p>Not bulky and a very easy and simple course that will make you a programmer</p>
+              <a href="#buy" class="btn focus-reset">
+                Start now
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature Area -->
+    <div class="features-area-l-14">
+      <div class="container bg-shape-img-2 position-relative">
+        <div class="row features-area-l-14 justify-content-center mx-0">
+          <div class="col-lg-6 col-md-8 col-sm-10 px-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-area  d-flex">
+              <div class="circle-85 hover-icon">
+                <img src="./image/l4/f-icon-1.png" alt="">
+              </div>
+              <div class="content-body pl-sm-14 pl-5">
+                <h5>
+                  Easy to understand</h5>
+                <p class="mb-0">
+                  With this course, you will find programming very understandable like normal language
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content-area  d-flex ">
+              <div class="circle-85 hover-icon">
+                <img src="./image/l4/f-icon-2.png" alt="">
+              </div>
+              <div class="content-body">
+                <h5>
+                  Free projects</h5>
+                <p class="mb-0">
+                  This course also comes with free projects that you can use to understand the programming language more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-10" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-area  d-flex ">
+              <!-- circle-85 start -->
+              <div class="circle-85 hover-icon">
+                <img src="./image/l4/f-icon-3.png" alt="">
+              </div>
+              <div class="content-body">
+                <h5>
+                  Mobile app</h5>
+                <p class="mb-0">
+                  Mobile app making every thing portable and quick to use.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content-area  d-flex ">
+              <div class="circle-85  hover-icon">
+                <img src="./image/l4/f-icon-4.png" alt="" />
+              </div>
+              <div class="content-body">
+                <h5>
+                  Simple and Easy</h5>
+                <p class="mb-0">
+                  This course will make you understand that programming is very simple and easy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing-area section -->
+    <div class="pricing-area-l14 position-relative overflow-hidden z-index-1" id="buy">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-6 col-lg-7 col-md-10 text-center" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
+            <div class="section-heading-8">
+              <h2>
+                Full course</h2>
+              <p>This paid course contains the lot of lessons and examples you will have to learn about programming and hacking into web applications
+                 , andriod penetration(gettings call logs, messages, documnets, get current location, get camera image etc), web development and python with a lot and
+                 lot of projects at it's back side.<br>Buy now.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" id="table-price-value" data-pricing-dynamic data-value-active="monthly">
+          <div class="col-md-12 text-center">
+            <!-- toggle-btn start -->
+            <div class="toggle-btn d-inline-block  justify-content-center">
+              <a class="btn-toggle btn-toggle-2 active-white d-flex  price-deck-trigger" data-pricing-trigger data-target="#table-price-value" href="javascript:">
+                <span class="round"></span>
+              </a>
+            </div>
+            <!-- toggle-btn end -->
+          </div>
+          <div class="col-md-12 col-sm-8 l-14-pricing-table row no-gutters">
+            <div class="col-lg-3 col-md-6 border p-0">
+              <!-- single-price start -->
+              <div class="single-price bg-default text-center  pt-5 pb-10 mb-lg-0" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                <!-- price-top start -->
+                <div class="price-top justify-content-between mb-2">
+                  <span>HTML</span>
+                </div>
+                <!-- price-top end -->
+                <!-- main-price start -->
+                <div class="main-price pb-8 border-bottom">
+                  <div class="price mt-3 mb-3 position-relative">
+                    <span class="d-inline-block mb-0  dynamic-value">$</span>
+                    <h2 class="d-inline-block mb-0  dynamic-value" data-active="21.5" data-monthly="21.5" data-yearly="25.5"></h2>
+                  </div>
+                  <span class=" dynamic-value" data-active="" data-monthly=""
+                                data-yearly=""></span>
+                </div>
+                <!-- main-price end -->
+                <!-- price-body start -->
+                <div class="price-body">
+                  <ul class="pricing-list with-check-icon list-unstyled">
+                    <li>
+                      Html couse</li>
+                    <li>
+                      25 Days of learning</li>
+                    <li>
+                      with free css course</li>
+                    <li>
+                      Free projects
+                    </li>
+                  </ul>
+                </div>
+                <div class="price-btn">
+                  <a class="btn focus-reset" href="https://wa.me/+12897026234">Get started now</a>
+                </div>
+                <!-- price-btn end -->
+              </div>
+              <!-- single-price end -->
+            </div>
+            <div class="col-lg-3 col-md-6 border p-0">
+              <!-- single-price start -->
+              <div class="single-price bg-default popular-pricing popular-pricing-2 text-center position-relative  pt-5 pb-10 mb-lg-0" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <!-- price-top start -->
+                <div class="price-top justify-content-between mb-2">
+                  <span>Php</span>
+                </div>
+                <!-- price-top end -->
+                <!-- main-price start -->
+                <div class="main-price pb-8 border-bottom">
+                  <div class="price mt-3 mb-3 position-relative">
+                    <span class="d-inline-block mb-0  dynamic-value">$</span>
+                    <h2 class="d-inline-block mb-0  dynamic-value" data-active="35.7" data-monthly="35.7" data-yearly="45.5"></h2>
+                  </div>
+                  <span class=" dynamic-value" data-active="" data-monthly=""
+                                data-yearly=""></span>
+                </div>
+                <!-- main-price end -->
+                <!-- price-body start -->
+                <div class=" price-body">
+                  <ul class="pricing-list with-check-icon list-unstyled">
+                    <li>
+                      Back-end with php</li>
+                    <li>
+                      40 days of learning</li>
+                    <li>
+                      Free SQL course</li>
+                    <li>
+                      Free projects</li>
+                  </ul>
+                </div>
+                <div class="price-btn">
+                  <a class="btn" href="https://wa.me/+12897026234">Get started now</a>
+                </div>
+                <!-- price-btn end -->
+              </div>
+              <!-- single-price end -->
+            </div>
+            <div class="col-lg-3 col-md-6 border p-0">
+              <!-- single-price start -->
+              <div class="single-price bg-default text-center  pt-5 pb-10 mb-lg-0" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <!-- price-top start -->
+                <div class="price-top justify-content-between mb-2">
+                  <span>PYTHON</span>
+                </div>
+                <!-- price-top end -->
+                <!-- main-price start -->
+                <div class="main-price pb-8 border-bottom">
+                  <div class="price mt-3 mb-3 position-relative">
+                    <span class="d-inline-block mb-0  dynamic-value">$</span>
+                    <h2 class="d-inline-block mb-0  dynamic-value" data-active="50" data-monthly="50" data-yearly="70"></h2>
+                  </div>
+                  <span class=" dynamic-value" data-active="" data-monthly=""
+                                data-yearly=""></span>
+                </div>
+                <!-- main-price end -->
+                <!-- price-body start -->
+                <div class=" price-body">
+                  <ul class="pricing-list with-check-icon list-unstyled">
+                    <li>
+                      programming with python</li>
+                    <li>
+                      50 days of learning</li>
+                    <li>
+                      Free use of library course</li>
+                    <li>
+                      Free projects</li>
+                  </ul>
+                </div>
+                <div class="price-btn">
+                  <a class="btn" href="https://wa.me/+12897026234">Get started now</a>
+                </div>
+                <!-- price-btn end -->
+              </div>
+              <!-- single-price end -->
+            </div>
+            <div class="col-lg-3 col-md-6 border p-0">
+              <!-- single-price start -->
+              <div class="single-price bg-default  text-center  pt-5 pb-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                <!-- price-top start -->
+                <div class="price-top justify-content-between mb-2">
+                  <span
+                                class="font-size-1 letter-spacing-np51 text-dovegray line-height-1p66 font-weight-bold">Hacking course</span>
+                </div>
+                <!-- price-top end -->
+                <!-- main-price start -->
+                <div class="main-price pb-8 border-bottom">
+                  <div class="price mt-3 mb-3 position-relative">
+                    <span class="d-inline-block mb-0  dynamic-value">$</span>
+                    <h2 class="d-inline-block mb-0  dynamic-value" data-active="120" data-monthly="120" data-yearly="150"></h2>
+                  </div>
+                  <span class=" dynamic-value" data-active="" data-monthly=""
+                                data-yearly=""></span>
+                </div>
+                <!-- main-price end -->
+                <!-- price-body start -->
+                <div class="price-body">
+                  <ul class="pricing-list with-check-icon list-unstyled">
+                    <li>
+                      Web penetration</li>
+                    <li>
+                      windows hacking</li>
+                    <li>
+                      Android hacking</li>
+                    <li>
+                      Free projects</li>
+                  </ul>
+                </div>
+                <div class="price-btn">
+                  <a class="btn" href="https://wa.me/+12897026234">Get started now</a>
+                </div>
+                <!-- price-btn end -->
+              </div>
+              <!-- single-price end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA Area -->
+    <div class="cta-area-l-14">
+      <div class="container position-relative">
+        <div class="bg-shape-img-3"></div>
+        <div class="row cta-area-l-14-content justify-content-center text-lg-start text-center">
+          <div class="col-lg-6">
+            <div class="cta-content">
+              <h2 class="text-white">Join whatsapp group and ask any question at anytime.</h2>
+            </div>
+          </div>
+          <div class="col-lg-3 text-lg-end text-center">
+            <a class="btn" href="#">Join now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Area -->
+    <footer class="footer-area-l-12 position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-11 pl-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="row">
+              <div class="col-sm-3 col-xs-6">
+                <div class="footer-widget widget2">
+                  <p>Help menu</p>
+                  <ul class="widget-links pl-0 list-unstyled">
+                    <li data-toggle="modal" data-target="#myModal">
+                      About
+                    </li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Career</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-6">
+                <div class="footer-widget widget3">
+                  <ul class="widget-links pl-0 list-unstyled">
+                    <li><a href="mailto:ikechukwuphilip45@gmail.com">Contact </a></li>
+                    <li><a onclick="openForm()" >Help & Support</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-5 col-xs-6 pl-lg-0">
+                <div class="footer-widget widget4">
+                  <p class="widget-title">Products</p>
+                  <ul class="widget-links pl-0 list-unstyled ">
+                    <li><a href="">Website designing</a></li>
+                    <li><a href="">Website Security</a></li>
+                    <li><a href="">Andriod hacking</a></li>
+                    <li><a href="">Business and school managment</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-8 col-sm-11" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="footer-subs-form-l-12">
+              <p>Subscribe to our newsletter</p>
+              <h6>Subscribe to get lastest offers, news and events announcements. No spam in your inbox.</h6>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter your email address" aria-label="">
+                <div class="input-group-append">
+                  <button class="btn border-0 focus-reset" type="button">
+                    <i class="icon icon-tail-right text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          
+          <div class="modal-header">
+            <h1 class="modal-title">ABOUT</h1>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h3>Philip codes cource</h3>
+            <p>Philip codes course have given many indivisuals the background-color in programming.
+              There are lot of courses out there that might offer courses for you either paid or free but philip codes course offers
+              you the best of its kind ranging from web development to hacking exploits. I will recommend you to use the paid cource because it offers 
+              the best of the best to you and fast.
+            </p>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/menu/menu.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
